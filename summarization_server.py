@@ -17,4 +17,4 @@ def summarization():
     except:
         return "please enter valid text"
 if __name__ == '__main__':
-    app.run(debug=True, port=8000)
+    app.run(debug=True, port=3000, host='0.0.0.0')
