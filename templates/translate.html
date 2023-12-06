@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATLAS</title>
+</head>
+<body>
+    <h1>Translation App</h1>
+    <form method="post" action="/atlas/translation">
+        <label for="user_input">Enter text to translate:</label>
+        <textarea type="text" name="user_input" rows="4" cols="50" required></textarea>
+        <br>
+        <label for="script_lang">Select target language:</label>
+        <input type="text" name="script_lang" required>
+        <br>
+        <input type="submit" value="Translate">
+    </form>
+    {% if user_input %}
+        <h2>Translation Result:</h2>
+        <p><strong>Input Text:</strong></p>
+        <p>{{ user_input }}</p>
+        <p><strong>Target Language:</strong> {{ script_lang }}</p>
+        <p><strong>Translated Text:</strong></p>
+        <p>{{ translated_result }}</p>
+    {% endif %}
+</body>
+</html>
