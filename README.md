@@ -1,1 +1,1 @@
-# Atlas_models
+# Atlas multi-thread model
