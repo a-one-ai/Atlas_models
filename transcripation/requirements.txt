@@ -1,0 +1,10 @@
+torch 
+transformers 
+pytube  
+moviepy 
+os
+flask
+flask_cors
+## for download ffmpeg 
+## just run this commend
+#choco install ffmpeg-full

@@ -1,0 +1,3 @@
+# to run this fill choco install -r choco_requirements.txt 
+choco install python311
+choco install ffmpeg-full
