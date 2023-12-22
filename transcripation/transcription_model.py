@@ -20,9 +20,10 @@ pipe = pipeline(
     model=model,
     tokenizer=processor.tokenizer,
     feature_extractor=processor.feature_extractor,
-    max_new_tokens=128,
+    max_new_tokens=100,
     #chunk_length_s=60,
-    batch_size=16,
+    batch_size=10
+    ,
     return_timestamps=False,
     torch_dtype=torch_dtype,
     device=device,
