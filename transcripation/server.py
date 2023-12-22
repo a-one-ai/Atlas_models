@@ -44,7 +44,7 @@ def process_audio():
         return process_file(audio, UPLOAD_AUDIOS_FOLDER, transcribeAudio)
     return jsonify({"error": "Invalid audio file. Please upload a valid file."}), 400
 
-@app.route("/getVidecoFile", methods=["POST"])
+@app.route("/getVideoFile", methods=["POST"])
 def process_video():
     """Process uploaded video files."""
     video = request.files.get("video")
